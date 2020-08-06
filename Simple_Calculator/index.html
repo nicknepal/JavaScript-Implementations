@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"  crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <title>My Calculator</title>
+</head>
+<body>
+    <h1 class="display-4">This is a Simple Calculator</h1>
+
+    <form id="clacform" name="cal">
+        
+        <input name="display" id="top-box" style="width:675px; height:100px;border-radius:0px;font-size: 75px; text-align:right; background-color:#1fc9b8;"></br>
+        <input type="button" id ="test" value="0" onclick="cal.display.value+='0'">
+        <input type="button" id ="test" value="1" onclick="cal.display.value+='1'">
+        <input type="button" id ="test" value="2" onclick="cal.display.value+='2'">
+        <input type="button" id ="test" value="+" onclick="cal.display.value+='+'" style="background-color:#cc5c11;"></br>
+        <input type="button" id ="test" value="3" onclick="cal.display.value+='3'">
+        <input type="button" id ="test" value="4" onclick="cal.display.value+='4'">
+        <input type="button" id ="test" value="5" onclick="cal.display.value+='5'">
+        <input type="button" id ="test" value="-" onclick="cal.display.value+='-'" style="background-color:#0c962c;"></br>
+        <input type="button" id ="test" value="6" onclick="cal.display.value+='6'">
+        <input type="button" id ="test" value="7" onclick="cal.display.value+='7'">
+        <input type="button" id ="test" value="8" onclick="cal.display.value+='8'">
+        <input type="button" id ="test" value="x" onclick="cal.display.value+='*'" style="background-color:#cbcbcb;"></br>
+        <input type="button" id ="test" value="9" onclick="cal.display.value+='9'">
+        <input type="button" id ="test" value="C" onclick="cal.display.value=''" style="background-color:#4011cc;">
+        <input type="button" id ="test" value="=" onclick="cal.display.value=eval(cal.display.value)" style="background-color:#16bfc2;">
+        <input type="button" id ="test" value="&#247;" onclick="cal.display.value+='/'" style="background-color:#9510d7;">
+
+
+
+
+
+    </form>
+    
+
+
+
+
+
+<script src="/script.js"></script>    
+</body>
+</html>

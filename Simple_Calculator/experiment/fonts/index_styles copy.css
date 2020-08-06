@@ -1,0 +1,727 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face{
+    font-family: orkney-thin;
+    src: url(fonts/Orkney-Light.otf);
+}
+
+@font-face{
+    font-family: orkney-bold;
+    src: url(fonts/Orkney-Bold.otf);
+}
+
+@font-face{
+    font-family: orkney-med;
+    src: url(fonts/Orkney-Medium.otf);
+}
+
+@font-face{
+    font-family: orkney-reg;
+    src: url(fonts/Orkney-Regular.otf);
+}
+
+.abv-nav{
+    color: black;
+    font-family: roboto;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.abv-nav p{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: lighter;
+    animation: ups 2s ease-in forwards ;
+}
+
+@keyframes ups{
+    0%{ 
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+.abv-nav img{
+    height: 70%;
+    margin: 0px;
+    animation: ups 1s ease-in forwards ;
+}
+
+@keyframes ups{
+    0%{ 
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+nav{
+    font-family: Raleway;
+    display: grid;
+    min-height: 90px;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    background-color: #51409a;
+    box-shadow:2px 2px 5px #635896;
+}
+
+
+.logo{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo2{
+    display: none;
+}
+
+.logo2 img{
+    height: 60px;
+    cursor: pointer;
+}
+
+
+.logo img{
+    padding: 0px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    align-content: center;
+    grid-gap: 40px;
+    z-index: 4;
+    list-style: none;
+}
+.nav-links a{
+    cursor: pointer;
+    color: white;
+}
+
+.nav-links .contact-toggle{
+    display: none;
+}
+
+.nav_contact_btn{
+    cursor: pointer;
+    display: grid;
+    justify-content: start;
+    align-content: center;
+    margin-left: 70px;
+    margin-right: 20px;
+}
+
+.burger{
+    cursor: pointer;
+    display: none;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    position: relative;
+    width: 50px;
+    padding-left: 6px;
+    padding-top:6px ;
+    border: .5px solid white;
+    border-radius: 5px;
+}
+.burger div{
+    background-color:white;
+    height:3px ;
+    width: 25px ;
+    margin: 5px;
+    border-radius: 1px;
+}
+
+
+
+/*----------------------------------------nav @ 1080px--------------------*/
+@media screen and (max-width:1080px){
+    .logo img{
+        height: 60px;
+        margin-left: 20px;
+    }
+    .nav-links a{
+        font-size: 14px;
+        grid-gap: 10px;
+    }
+    .nav_contact_btn{
+        margin-left: 0px;
+    }
+}
+
+/*----------------------------------------nav @ 900px--------------------*/
+
+@media screen and (max-width:920px){
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        min-height: 70px;
+    }
+    .nav-links{
+        padding-top: 0px;
+        padding-bottom: 300px;
+        margin-top: 20px;
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color:#51409a;
+        display: grid;
+        grid-auto-flow: row;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links a{
+       position: relative;
+       font-size: 20px;
+    }
+
+    .nav-links .contact-toggle{
+        display: block;
+    }
+
+
+    .nav_contact_btn{
+        display: none;
+    }
+    .burger{
+        display: block;
+        position: relative;
+        padding-bottom: 3.5px;
+        margin-right: 30px;
+        margin-left: 70%;
+    }
+
+    .logo{
+        display: none;
+    }
+    .logo img{
+        display: none;
+    }
+    .logo2{
+        display: block;
+        position: relative;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+}
+
+/*----------------------------------------nav @ 640px------------------------*/
+@media screen and (max-width:640px){
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        min-height: 70px;
+    }
+    .nav-links{
+        padding-top: 0px;
+        padding-bottom: 300px;
+        margin-top: 20px;
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #51409a;
+        display: grid;
+        grid-auto-flow: row;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links a{
+       position: relative;
+       font-size: 16px;
+    }
+
+    .nav-links .contact-toggle{
+        display: block;
+    }
+
+    .nav_contact_btn{
+        display: none;
+    }
+    .burger{
+        display: block;
+        position: relative;
+        padding-bottom: 3.5px;
+        margin-right: 30px;
+        margin-left: 50%;
+    }
+    .logo{
+        display: none;
+    }
+    .logo img{
+        display: none;
+    }
+    .logo2{
+        display: block;
+        justify-content: center;
+        align-content: center;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+    
+}
+
+
+/*---------------------------------------------NAV CSS Over-----------------------------------------------*/
+
+/*---------------------------------------------BANNER Slider CSS STart-----------------------------------------------*/
+
+.hero{
+    height: 70%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.hero img{
+    margin-top: 2vh;
+    position: relative; 
+}
+
+.left-side-banner-text{
+    position: absolute;
+    top: 1vh;
+    padding-top: 5%;
+    left: 5vw;
+    z-index: 1;
+    animation: side 2s ease forwards ;
+}
+
+@keyframes side{
+    0%{ 
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.left-side-banner-text p{
+    margin: 0;
+    padding:0;
+}
+
+
+.hero #bt-1{
+    text-align: left; 
+    font-size:35px; 
+    color: black; 
+    font-family:orkney-thin;
+}
+
+.banner-phone-img{
+    animation-delay: 3s;
+    animation: slide 2s ease ;
+}
+@keyframes slide{
+    0%{
+        transform:scale(1.3);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+#bt-2{
+    text-align: left;
+    font-size:40px;
+    color: black;
+    font-family: orkney-thin;
+}
+#bt-3{
+    text-align: left;
+    font-size:50px;
+    font-family:orkney-bold;
+    color:#ff0065;
+}
+
+#bt-4{
+    text-align: left;
+    font-size:15px; 
+    color: black; 
+    font-family: orkney-thin; 
+    width: 50%;
+    padding-bottom: 15px;
+}
+/*-----------------media query for banner---------------------------*/
+
+
+/*-------- @ 1080px------------------------*/
+@media screen and (max-width:1080px){
+    .hero #bt-1{
+        font-size: 30px;
+    }
+    #bt-2{
+        font-size: 35px;
+    }
+    #bt-3{
+        font-size: 45px;
+    }
+    #bt-4{
+        font-size: 12px;
+    }
+    
+}
+
+/*-------- @ 990px------------------------*/
+@media screen and (max-width:920px){
+    .hero #bt-1{
+        font-size: 25px;
+    }
+    #bt-2{
+        font-size: 30px;
+    }
+    #bt-3{
+        font-size: 35px;
+    }
+    #bt-4{
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+
+}
+
+/*-------- @ 768px------------------------*/
+@media screen and (max-width:768px){
+    .hero #bt-1{
+        font-size: 20px;
+    }
+    #bt-2{
+        font-size: 20px;
+    }
+    #bt-3{
+        font-size: 30px;
+    }
+    #bt-4{
+        font-size: 10px;
+        padding-bottom: 5px;
+        text-align: justify;
+        line-height: 14px;
+    }
+
+}
+/*-------- @ 640px------------------------*/
+@media screen and (max-width:640px){
+    .hero #bt-1{
+        font-size: 20px;
+    }
+    #bt-2{
+        font-size: 20px;
+    }
+    #bt-3{
+        font-size: 30px;
+    }
+    #bt-4{
+       display: none;
+    }
+
+}
+
+/*-------- @ 510px------------------------*/
+@media screen and (max-width:510px){
+    .hero #bt-1{
+        font-size: 20px;
+    }
+    #bt-2{
+        font-size: 20px;
+    }
+    #bt-3{
+        font-size: 30px;
+    }
+    #bt-4{
+        font-size: 10px;
+        padding-bottom: 5px;
+        text-align: justify;
+        line-height: 14px;
+    }
+    .hero .banner-phone-img{
+        width: 150%;
+    }
+
+}
+/*-------------------------------------Banner Over css-------------------------------*/
+
+
+/*-------------------------------------Wrapper-1 css-------------------------------*/
+
+.wrapper-1{
+    background-color: #e3e3e3;
+    box-shadow: 0 8px 6px -7px black;
+    height: 40px;
+    border-radius: 4px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    font-family: raleway;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.flex-box1{
+    padding-top: 10px;
+    cursor: pointer;
+    order: 1;
+    flex-grow: 1 ;
+    text-align: center;
+}
+.flex-box1 a{
+    color: rgb(0, 0, 0);
+    
+}
+
+.flex-box1:hover {
+        background-color:#51409a;
+    }
+
+    .flex-box1 a:hover{
+        color: white;
+    }
+    
+
+
+@media screen and (max-width:768px){
+    .wrapper-1{
+        height: 70px;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:722px){
+    .wrapper-1{
+     display: none;
+    }
+}
+
+/*----------------------------------------TABS CSs OVER------------------------------*/
+
+.flex-box2{
+    margin-top: 45px;
+    height: 45vh;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+
+.intro{
+    flex: 1;
+    align-self: start;
+    line-height: 18px;
+    margin-left: 80px;
+    margin-top: 45px;
+}
+.btn-prop{
+    color: white;
+    background-color: black;
+    border-color: rgb(0, 0, 0);
+}
+.btn-prop:hover{
+    color: black;
+    background-color: white;
+}
+
+
+#red-txt{
+    padding-right: 40px;
+    color:#ff0065; 
+    font-size: 13px;
+}
+
+#lg-txt{
+    font-family: orkney-med;
+    font-size:29px;
+    width: 30vw;
+    line-height: 5vh;
+}
+#sm-txt{
+    font-family: orkney-thin; 
+    font-size:15px; 
+    padding-right: 40px;
+    line-height: 20px; 
+    text-align: justify;"
+}
+
+
+.intro-1{
+    flex: 2;
+    margin-top: 30px;
+    margin-bottom: auto;
+    font-family: orkney-thin;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 20px;
+}
+.flex-box2 img{
+    height: 90%;
+}
+
+.img-black-screen{
+    margin-top: 15px ;
+}
+
+
+.intro-1 img{
+    border-radius: 10%;
+}
+
+@media screen and (max-width:1080px){
+    .intro-1{
+        font-size:13px;
+    }
+    #lg-txt{
+        font-size: 25px;
+    }
+    #sm-txt{
+        font-size: 14px;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+.flex-box3{
+    height: 110vh;
+    border-top:thin solid rgb(220, 220, 220) ;
+}
+
+.flex-box4{
+    height: 90vh;
+}
+
+#txt-1{
+    color: #51409a;
+    font-size: 25px;
+    font-family: orkney-med;
+    text-align: center;
+    padding-top: 10vh;
+}
+#txt-2{
+    font-size: 17px;
+    font-family: orkney-thin;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.idea-img{
+    height: 90%; 
+    width: 90%; 
+    padding-left: 9%;
+}
+
+.idea-box{
+    height:100%;
+    width: 100%;
+    margin-top: ;
+}
+
+.idea-box-1{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-left: 50px;
+    margin-top: 3%;
+    height: 90px;
+}
+.idea-box-1:hover{
+    box-shadow: 4px 4px 4px rgb(182, 182, 182);
+    background-color: #ff0065;
+    color: whitesmoke;
+}
+
+.idea-box-1 img{
+    flex: 1;
+    align-content: flex-start;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    margin-top: 10px;
+    
+}
+.idea-box-1 p{
+    flex:1;
+    height: 80px;
+    width: 70%;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+/*-------------------------------------------SEction CSS  Over--------------------------------------------------*/
+
+.flex-box-container{
+    cursor: pointer;
+    margin-bottom: 100vh;
+    display: flex;
+    background-color: #51409a;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+ .flex-box-container:hover{
+     background-color: #8e002f;
+     
+ }
+
+.flex-box-item-1{
+    flex: 1;
+    height: 100%;
+    color: white;
+    padding-top: 70px;
+    padding-bottom:;
+    padding-left: 8%;
+    padding-right: 2%;
+}
+
+#consult-1{
+    height: 150px;
+}
+ 
+.flex-box-item-1 strong{
+    font-size: 35px;
+    font-family: Orkney-bold;
+}
+.flex-box-item-1 p{
+    font-size: 15px;
+    font-family: Orkney-thin;
+}
+
+
+.flex-box-item-2{
+    flex: 1;
+    font-family: Helvetica;
+    height: 100%;
+    color: white;
+}
+
+#consult-2{
+    height: 350px;
+    padding-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}

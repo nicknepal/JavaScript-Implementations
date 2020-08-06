@@ -1,0 +1,47 @@
+
+@font-face{
+    font-family: segment-display-1;
+    src: url(/font/DSEG14ModernMini-Bold.ttf);
+}
+
+@font-face{
+    font-family: segment-display-2;
+    src: url(/font/DSEG14Modern-Bold.ttf);
+}
+
+
+.clock-timer{
+    font-size: 100px;
+    color:white;
+    font-weight: bold;
+    font-family: segment-display-2;
+    position: relative;
+    padding-top: 46px;
+    padding-right:25px;
+    text-align: center;
+
+}
+
+.rect{
+    height: 200px;
+    width: 800px;
+    background-color:#5400cb ;
+    margin-top:175px;
+    margin-left: 290px;
+    border: 20px solid #ff6200;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#myDate{
+    height: 75px;
+    width: 400px;
+    font-size: x-large;
+    margin-left: 200px;
+    background-color: rgb(114, 219, 219);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-left: 500px;
+
+}
