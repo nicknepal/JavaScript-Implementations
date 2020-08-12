@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ID Card Studio</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+
+
+<!--------Info_Heading------>
+<p id="Info_Heading">Please Enter ID_Card Details:</p>
+<!--------Info_Heading------>
+
+
+<!--------------------Info_Block-------------------->
+<div class="info-block">
+  <form>
+    
+      <!------------------ First Name-----------> 
+      <label for="fname">Full Name</label><br>
+      <input type="text" id="name" name="firstname" placeholder="Please Enter..">
+      <br>
+
+
+      <!------------------Department-----------> 
+      <label for="dept">Department</label><br>
+      <select id="dept" name="Department">
+        <option value="I.T">Dept. Of Information Technology</option>
+        <option value="Cardio">Dept. Of Cardiology</option>
+        <option value="Physiotherapy">Dept. Of Physiotherapy</option>
+      </select><br>
+
+      <!------------------Designation-----------> 
+      <label for="position">Designation</label><br>
+      <input id="position" type="text"  name="designation" placeholder="Please Enter Designation.."><br>
+
+      <!------------------phone-----------> 
+      <label for="phone">Phone</label><br>
+      <input id="phone" type="text"  name="phone_number" placeholder="Please Enter phone number.."><br>
+
+      <!------------------Email-----------> 
+      <label for="email">Email</label><br>
+      <input id="email" type="text"  name="Email" placeholder="Please Enter Email.."><br>
+
+      <!------------------Emergency Contact-----------> 
+      <label for="emergency">Emergency Contact number</label><br>
+      <input id="emergency" type="text"  name="emergency" placeholder="Please Enter phone number.."><br><br>
+  
+    
+      <!------------------UPLOAD IMAGE BUTTON----------->
+    
+      <input id="myFile" type="file"  name="filename"><br>
+      
+
+      <!------------------SUBMIT BUTTON----------->  
+      <input id="submit" type="submit" value="Submit" >
+      
+
+  </form>
+
+
+<!------------------SAVE BUTTON-----------> 
+<button type="button" id="custom-button-save">Save Your Image</button>
+<!------------------SAVE BUTTON----------->     
+
+</div>
+
+<img src="">
+</body>
+</html>
+
+
+
+
+<!-------------------------------Process---------------Alorithm-----------------------
+
+1. Get values from the form. 
+2. Create an object and store the values of form in it.
+3. "onclick" event of submit will save the values or object in db.
+4. "save your image" triggers the function that will put object values in the image and saves it.
+
+
+->
