@@ -9,24 +9,25 @@
 <body>
 
 
-<!--------Info_Heading------>
-<p id="Info_Heading">Please Enter ID_Card Details:</p>
-<!--------Info_Heading------>
-
 
 <!--------------------Info_Block-------------------->
 <div class="info-block">
   <form>
     
       <!------------------ First Name-----------> 
-      <label for="fname">Full Name</label><br>
-      <input type="text" id="name" name="firstname" placeholder="Please Enter..">
+      <label for="fname">First Name</label><br>
+      <input id="fname" type="text" name="firstname" placeholder="Please Enter.." required>
       <br>
 
+      <!------------------ Last Name----------->       
+
+      <label for="lname">Last Name</label><br>
+      <input  id="lname" type="text" name="lastname" placeholder="Please Enter.." required>
+      <br>
 
       <!------------------Department-----------> 
       <label for="dept">Department</label><br>
-      <select id="dept" name="Department">
+      <select id="dept" name="Department" required>
         <option value="I.T">Dept. Of Information Technology</option>
         <option value="Cardio">Dept. Of Cardiology</option>
         <option value="Physiotherapy">Dept. Of Physiotherapy</option>
@@ -34,28 +35,28 @@
 
       <!------------------Designation-----------> 
       <label for="position">Designation</label><br>
-      <input id="position" type="text"  name="designation" placeholder="Please Enter Designation.."><br>
+      <input id="position" type="text"  name="designation" placeholder="Please Enter Designation.." required><br>
 
       <!------------------phone-----------> 
       <label for="phone">Phone</label><br>
-      <input id="phone" type="text"  name="phone_number" placeholder="Please Enter phone number.."><br>
+      <input id="phone" type="text"  name="phone_number" placeholder="Please Enter phone number.." required><br>
 
       <!------------------Email-----------> 
       <label for="email">Email</label><br>
-      <input id="email" type="text"  name="Email" placeholder="Please Enter Email.."><br>
+      <input id="email" type="text"  name="Email" placeholder="Please Enter Email.." required><br>
 
       <!------------------Emergency Contact-----------> 
       <label for="emergency">Emergency Contact number</label><br>
-      <input id="emergency" type="text"  name="emergency" placeholder="Please Enter phone number.."><br><br>
+      <input id="emergency" type="text"  name="emergency" placeholder="Please Enter phone number.." required><br><br>
   
     
       <!------------------UPLOAD IMAGE BUTTON----------->
     
-      <input id="myFile" type="file"  name="filename"><br>
+      <input id="myFile" type="file"  name="filename" required><br>
       
 
       <!------------------SUBMIT BUTTON----------->  
-      <input id="submit" type="submit" value="Submit" >
+      <input id="submit" onclick="func()" type="submit" value="Submit" >
       
 
   </form>
@@ -67,7 +68,24 @@
 
 </div>
 
-<img src="">
+
+
+<div class="id-card">
+  <img src="images/sky_blue.jpg" id="destination-card">
+  <p id="fname-card">Sanjay</p>
+  <p id="lname-card">Pd. Bhandari</p>
+  <p id="dept-card">Dept. of Information Technology</p>
+  <p id="position-card">Dept. Head</p>
+  <p id="phone-card">9847272921</p>
+  <p id="email-card">sanjay.bhandari@gmail.com</p>
+  <p id="emergency-card">9847279281</p>
+</div>
+
+
+
+
+
+<script src="app.js"></script>
 </body>
 </html>
 

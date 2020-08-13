@@ -1,3 +1,22 @@
+@font-face{
+	font-family: nexa-reg;
+	src: url('/font/NexaRegular.otf');
+}
+
+@font-face{
+	font-family: nexa-bold;
+	src: url('/font/NexaBold.otf');
+}
+
+@font-face{
+	font-family: nexa-light;
+	src: url('/font/NexaLight.otf');
+}
+
+
+
+
+
 
 body{
   background:url('bg_img1.jpg') fixed center;
@@ -12,16 +31,10 @@ body{
 	margin-left: 10%;
 }
 
-#Info_Heading{
-	font-family: 'Muli', sans-serif;
-	color: #292929;
-	font-size: 20px; 
-	margin-left: 15%;
-}
 
 input[type=text], select {
   width: 40%;
-  padding: 7px 14px;
+  padding: 6px 14px;
   margin: 8px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -52,7 +65,7 @@ div {
 #custom-button{
 	padding: 5px;
 	color: white;
-	background-color: #009578;
+	background-color: #c11000;
 	border: 1px solid #000;
 	border-radius: 5px;
 	cursor: pointer;
@@ -73,7 +86,7 @@ div {
 	position: absolute;
 	float: right;
 	right: 19%;
-	bottom:10%;
+	bottom:5%;
 	color: white;
 	padding: 6px 30px;
 	background-color: rgb(255, 0, 0);
@@ -84,4 +97,87 @@ div {
 
 #custom-button-save:hover{
 	background-color: #038731;
+}
+
+
+
+/*------------------------------------------------hidden card css-------------------------------------------------------*/
+
+.id-card{
+	display: none;
+	position: relative;
+}
+
+.id-card #fname-card {
+	text-transform: uppercase;
+	position: absolute;
+	font-family: nexa-bold;
+	color: #c11000;
+	font-size: 40px;
+	text-align: center;
+	top: 53.5%;
+	left: 26.5%;
+	transform: translate(-50%,-50%);
+}
+
+.id-card #lname-card{
+	position: absolute;
+	font-family: nexa-bold;
+	color: #c11000;
+	font-size: 32px;
+	text-align: center;
+	top: 57%;
+	left: 26.5%;
+	transform: translate(-50%,-50%);
+	
+}
+
+.id-card #dept-card{
+	position: absolute;
+	font-family: nexa-bold;
+	color: #c11000;
+	font-size: 34px;
+	letter-spacing: -1px;
+	text-align: center;
+	top: 63.5%;
+	left: 27.6%;
+	transform: translate(-50%,-50%);
+	
+}
+
+.id-card #position-card{
+	position: absolute;
+	font-family: nexa-bold;
+	color: #c11000;
+	font-size: 25px;
+	top: 71.5%;
+	left: 20%;
+}
+
+.id-card #phone-card{
+	position: absolute;
+	font-family: nexa-bold;
+	color: #c11000;
+	font-size: 25px;
+	top: 76.5%;
+	left: 20%;
+}
+
+.id-card #email-card{
+	position: absolute;
+	font-family: nexa-bold;
+	color: #c11000;
+	font-size: 20px;
+	top: 81.5%;
+	left: 20%;
+	
+}
+
+.id-card #emergency-card{
+	position: absolute;
+	font-family: nexa-bold;
+	color: #c11000;
+	font-size: 25px;
+	top: 86%;
+	left: 20%;
 }
